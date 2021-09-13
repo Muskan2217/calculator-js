@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=lablfo, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/micku7zu/vanilla-tilt.js/master/dist/vanilla-tilt.js">
+    <link rel="stylesheet" href="css/calc.css" />
+  </head>
+  <body>
+
+<div class="main">
+
+
+
+
+    <form class="calculator" name="calculator">
+
+        <div class="screen">
+          <input type="text" name="screen" readonly>
+        </div>
+
+   <div class="btn flex"> 
+      <input class="clearbtn" type="button" name="clear"  value="C"  onclick="Clear()"></input>
+      <input class="numbers" type="button" name="div"  value="/"  onclick="valueButton(this);"></input>
+      <input class="backspace" type="button" name="backspace"  value="⬅️"  onclick="Backspace()"></input>
+   </div>
+      <!-- keys -->
+
+     <div class="btn"> 
+      <input class="numbers" type="button" name="num1"  value="1"  onclick="valueButton(this);"></input>
+       <input class="numbers" type="button" name="num2"  value="2"  onclick="valueButton(this);"></input>
+        <input class="numbers" type="button" name="num3"  value="3"  onclick="valueButton(this);"></input>
+         <input class="numbers" type="button" name="plus"  value="+"  onclick="valueButton(this);"></input>
+     </div>
+
+   <div class="btn"> 
+      <input class="numbers" type="button" name="num4"  value="4"  onclick="valueButton(this);"></input>
+       <input class="numbers" type="button" name="num5"  value="5"  onclick="valueButton(this);"></input>
+        <input class="numbers" type="button" name="num6"  value="6"  onclick="valueButton(this);"></input>
+         <input class="numbers" type="button" name="sub"  value="-"  onclick="valueButton(this);"></input>
+    </div>
+
+    <div class="btn"> 
+      <input class="numbers" type="button" name="num7"  value="7"  onclick="valueButton(this);"></input>
+       <input class="numbers" type="button" name="num8"  value="8"  onclick="valueButton(this);"></input>
+        <input class="numbers" type="button" name="num9"  value="9"  onclick="valueButton(this);"></input>
+         <input class="numbers" type="button" name="mul"  value="*"  onclick="valueButton(this);"></input>
+    </div>
+
+    <div class="btn"> 
+      <input class="numbers" type="button" name="num0"  value="0"  onclick="valueButton(this);"></input>
+       <input class="numbers" type="button" name="div"  value="."  onclick="valueButton(this);"></input>
+        <input class="numbers eql" type="button" name="equal"  value="="  onclick="Calculate(this);"></input>
+  </div>
+    </form>
+</div>
+
+
+<!-- java script  -->
+
+ <script src="js/script.js"></script>
+
+
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".calculator"),{
+		max: 25,
+		speed: 400,
+    glare: true, 
+    "max-glare": 0.2, 
+	});		
+</script>
+    
+  </body>
+</html>
+ 
